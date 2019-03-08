@@ -1,0 +1,15 @@
+def firstMissingPositive( A):
+        if len(A)==1:
+            if A[0] > 0:
+                return A[0]+1
+            else:
+                return 1
+        A=sorted(A)
+        B=set(A)
+        C=set(range(min(A),max(A)+1))
+        D=[elem for elem in C-B if elem > 0]
+        return D[0] if D else 1
+if __name__ == "__main__":
+    A =[ 1, 1, 1 ]
+    #A=[ 5, 9,2, 8, 6, 4, 6, 9, 5, 4, 9 ]
+    print(maxSpecialProduct(A))
