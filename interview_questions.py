@@ -448,9 +448,11 @@ __str__ vs __repr__
 
 these are the protocols to be implemented to call str() and repr()
 if __str__() is not implemented, str() will call __repr_().
-But if __repr__ is not iplmented repr() of super class is invoked
+But if __repr__ is not implmented repr() of super class is invoked
 print uses __str__
 """
+
+
 
 
 
